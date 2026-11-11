@@ -287,7 +287,7 @@ function analisarMeuDia() {
     if (horasPerigo > 0) {
         resultadoDia.innerHTML = `
             <h3>☀️ ${horasPerigo} hora(s) em perigo</h3>
-            <p>Durante seu expediente, ${horasPerigo} hora(s) apresentam temperaturas simuladas acima de 39°C. Procure sombra, beba água e faça pausas regulares.</p>
+            <p>Durante seu expediente, ${horasPerigo} hora(s) apresentam temperaturas simuladas acima de 39°C. A cada 1 hora seguida em perigo, faça uma pausa de 5 minutos: procure sombra e beba água.</p>
         `;
     } else {
         resultadoDia.innerHTML = `

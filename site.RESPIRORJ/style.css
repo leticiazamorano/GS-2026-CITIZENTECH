@@ -62,7 +62,7 @@ button {
     list-style: none;
 }
 .menu a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--texto);
 }
@@ -97,7 +97,7 @@ button {
     border-radius: 30px;
     background-color: #FBE0CE;
     color: var(--azul);
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
 }
 .hero h1 {
@@ -129,7 +129,7 @@ button {
     padding: 16px 26px;
     border-radius: 12px;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
     transition: 0.2s;
@@ -188,7 +188,7 @@ button {
 .pontos__etiqueta {
     display: inline-block;
     color: var(--verde);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -243,7 +243,7 @@ button {
     margin-bottom: 16px;
 }
 .problema__card p, .solucao__etapa p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
@@ -296,18 +296,18 @@ button {
     margin-bottom: 8px;
 }
 .problema__numero-card p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--texto-secundario);
     margin-bottom: 16px;
 }
 .problema__data {
-    font-size: 13px;
+    font-size: 16px;
     color: var(--texto-secundario);
 }
 .problema__fonte {
     margin-top: 30px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
@@ -327,7 +327,7 @@ button {
 .solucao__numero {
     display: block;
     color: var(--verde);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 12px;
 }
@@ -357,7 +357,7 @@ button {
     margin-bottom: 8px;
 }
 .dashboard__cabecalho p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--texto-secundario);
 }
 .dashboard__status {
@@ -365,7 +365,7 @@ button {
     border-radius: 30px;
     background-color: #FBE0CE;
     color: #A84330;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     white-space: nowrap;
 }
@@ -388,7 +388,7 @@ button {
     margin-bottom: 18px;
 }
 .indicador p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--texto-secundario);
     margin-bottom: 12px;
 }
@@ -417,7 +417,7 @@ button {
     margin-bottom: 12px;
 }
 .dashboard__simulador p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
     margin-bottom: 24px;
@@ -432,7 +432,7 @@ button {
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 18px;
 }
@@ -469,7 +469,7 @@ button {
     margin-bottom: 8px;
 }
 .resfriamento__informacoes p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
     color: var(--texto-secundario);
 }
@@ -499,7 +499,7 @@ button {
     margin-bottom: 12px;
 }
 .dashboard__alerta p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
 }
 .dashboard__alerta.normal {
@@ -543,7 +543,7 @@ button {
 }
 .meu-dia__campo label {
     display: block;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 12px;
 }
@@ -570,13 +570,13 @@ button {
     margin-bottom: 12px;
 }
 .meu-dia__resultado p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
 .meu-dia__aviso {
     margin-top: 24px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
@@ -617,7 +617,7 @@ button {
     margin-bottom: 14px;
 }
 .pontos__card p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
     margin-bottom: 20px;
@@ -629,13 +629,13 @@ button {
     border-radius: 20px;
     background-color: #FBE0CE;
     color: var(--azul);
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
 }
 .pontos__link {
     margin-top: auto;
     color: var(--azul);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 .pontos__link:hover {
@@ -645,7 +645,7 @@ button {
     max-width: 900px;
     margin: 30px auto 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
@@ -701,13 +701,13 @@ button {
     margin-bottom: 14px;
 }
 .pagina-ponto__card p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
 .pagina-ponto__aviso {
     margin-top: 35px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--texto-secundario);
 }
@@ -731,7 +731,7 @@ button {
     color: #F3B36D;
 }
 .rodape__sobre p, .rodape__equipe p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     color: #E1C6B7;
 }
@@ -747,7 +747,7 @@ button {
 }
 .rodape__navegacao a {
     color: #E1C6B7;
-    font-size: 14px;
+    font-size: 16px;
 }
 .rodape__navegacao a:hover {
     color: #F3B36D;
@@ -762,7 +762,7 @@ button {
     border-top: 1px solid #76584D;
 }
 .rodape__inferior p {
-    font-size: 13px;
+    font-size: 16px;
     color: #E1C6B7;
 }
 body.tema-escuro {
@@ -887,7 +887,7 @@ body.tema-escuro .rodape {
         gap: 12px 18px;
     }
     .menu a {
-        font-size: 13px;
+        font-size: 16px;
     }
     .hero {
         padding: 48px 5%;
@@ -976,7 +976,7 @@ body.tema-escuro .rodape {
     display: inline-block;
     margin-bottom: 45px;
     color: var(--azul);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 .pagina-ponto__voltar:hover {
@@ -990,7 +990,7 @@ body.tema-escuro .rodape {
     display: inline-block;
     margin-bottom: 20px;
     color: var(--verde);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
 }
 .pagina-ponto__introducao h1 {
@@ -1028,7 +1028,7 @@ body.tema-escuro .rodape {
     margin-bottom: 18px;
 }
 .pagina-ponto__card p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
     color: var(--texto-secundario);
 }
@@ -1038,7 +1038,7 @@ body.tema-escuro .rodape {
     border-radius: 12px;
     background-color: #FFF0E5;
     color: #76584D;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.7;
 }
 body.tema-escuro .pagina-ponto__aviso {
