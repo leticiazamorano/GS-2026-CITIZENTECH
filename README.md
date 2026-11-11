@@ -1,5 +1,4 @@
 # Respiro RJ
-
 Global Solution 2026.2 · CitizenTech · Engenharia de Software, 1º ano · FIAP Rio de Janeiro
 
 ## Ficha da CitizenTech
@@ -21,7 +20,7 @@ Global Solution 2026.2 · CitizenTech · Engenharia de Software, 1º ano · FIAP
 | Pasta ou arquivo | O que tem |
 |---|---|
 | `python/` | Programa em Python que analisa as leituras de calor do dia e mostra o aviso |
-| `site/` | Landing page do projeto (HTML, CSS e JavaScript) |
+| `site.RESPIRORJ` | Landing page do projeto (HTML, CSS e JavaScript) |
 | `Integrantes.md` | Nome completo e RM da equipe |
 | `AI.md` | Como a IA foi usada no site |
 
