@@ -54,22 +54,28 @@ function calcularSensacaoTermica(temperatura, umidade) {
         if (umidade < 13 && t >= 80 && t <= 112) {
             indice -= ((13 - umidade) / 4) * Math.sqrt((17 - Math.abs(t - 95)) / 17);
         }
+
         if (umidade > 85 && t >= 80 && t <= 87) {
             indice += ((umidade - 85) / 10) * ((87 - t) / 5);
         }
     }
+
     return (indice - 32) / 1.8;
 }
 
 function calcularMedia(valor) {
     ultimasLeituras.push(valor);
+
     if (ultimasLeituras.length > 3) {
         ultimasLeituras.shift();
     }
+
     let soma = 0;
+
     for (let numero of ultimasLeituras) {
         soma += numero;
     }
+
     return soma / ultimasLeituras.length;
 }
 
@@ -77,9 +83,11 @@ function classificarRisco(sensacao) {
     if (sensacao > LIMITE_PERIGO) {
         return "PERIGO";
     }
+
     if (sensacao >= LIMITE_ATENCAO) {
         return "ATENCAO";
     }
+
     return "NORMAL";
 }
 
@@ -91,6 +99,7 @@ function atualizarAlerta() {
         alertaTitulo.textContent = "💚 Temperatura normal";
         alertaMensagem.textContent = "Condição simulada normal. Mantenha a água por perto.";
         caixaAlerta.className = "dashboard__alerta normal";
+
     } else if (estadoAtual === "ATENCAO") {
         riscoValor.textContent = "Atenção";
         riscoDescricao.textContent = "Calor forte";
@@ -98,6 +107,7 @@ function atualizarAlerta() {
         alertaTitulo.textContent = "⚠️ Atenção ao calor";
         alertaMensagem.textContent = "Calor forte na simulação. Beba água com frequência.";
         caixaAlerta.className = "dashboard__alerta atencao";
+
     } else if (estadoAtual === "PERIGO") {
         riscoValor.textContent = "Perigo";
         riscoDescricao.textContent = "Calor perigoso";
@@ -105,6 +115,7 @@ function atualizarAlerta() {
         alertaTitulo.textContent = "🚨 Perigo: calor intenso";
         alertaMensagem.textContent = "Calor perigoso na simulação! Ventilação simulada ligada. Beba água.";
         caixaAlerta.className = "dashboard__alerta alerta-elevado";
+
     } else if (estadoAtual === "PAUSA") {
         riscoValor.textContent = "Pausa";
         riscoDescricao.textContent = "Pausa de segurança simulada";
@@ -112,6 +123,7 @@ function atualizarAlerta() {
         alertaTitulo.textContent = "🚨 Hora de fazer uma pausa";
         alertaMensagem.textContent = "Simulação de pausa de segurança. Procure sombra, descanse e beba água.";
         caixaAlerta.className = "dashboard__alerta alerta-elevado";
+
     } else {
         riscoValor.textContent = "Leitura inválida";
         riscoDescricao.textContent = "Verifique os controles";
@@ -158,26 +170,37 @@ function atualizarMonitoramento() {
         sensacaoValor.textContent = "--°C";
         atualizarAlerta();
         atualizarResfriamento();
+        atualizarContador();
         return;
     }
 
     const sensacao = calcularSensacaoTermica(temperatura, umidade);
     const sensacaoMedia = calcularMedia(sensacao);
+
     sensacaoValor.textContent = sensacaoMedia.toFixed(1) + "°C";
+
     const classificacao = classificarRisco(sensacaoMedia);
     ventilacaoLigada = classificacao === "PERIGO";
 
     if (estadoAtual === "PAUSA") {
-        if (agora - inicioPausa < DURACAO_PAUSA) {
+        if (classificacao !== "PERIGO") {
+            estadoAtual = classificacao;
+            inicioPerigo = null;
+            inicioPausa = null;
+        } else if (agora - inicioPausa < DURACAO_PAUSA) {
             atualizarAlerta();
             atualizarResfriamento();
+            atualizarContador();
             return;
+        } else {
+            estadoAtual = "PERIGO";
+            inicioPerigo = agora;
+            inicioPausa = null;
         }
-        estadoAtual = classificacao;
-        inicioPerigo = classificacao === "PERIGO" ? agora : null;
-        inicioPausa = null;
+
         atualizarAlerta();
         atualizarResfriamento();
+        atualizarContador();
         return;
     }
 
@@ -185,6 +208,7 @@ function atualizarMonitoramento() {
         if (inicioPerigo === null) {
             inicioPerigo = agora;
         }
+
         if (agora - inicioPerigo >= TEMPO_ATE_PAUSA) {
             estadoAtual = "PAUSA";
             inicioPausa = agora;
@@ -194,11 +218,13 @@ function atualizarMonitoramento() {
         }
     } else {
         inicioPerigo = null;
+        inicioPausa = null;
         estadoAtual = classificacao;
     }
 
     atualizarAlerta();
     atualizarResfriamento();
+    atualizarContador();
 }
 
 function atualizarContador() {
@@ -206,23 +232,28 @@ function atualizarContador() {
 
     if (estadoAtual === "PAUSA" && inicioPausa !== null) {
         const restante = Math.max(0, Math.ceil((DURACAO_PAUSA - (agora - inicioPausa)) / 1000));
-        contadorPerigo.textContent = "Pausa simulada: faltam " + restante + " segundos";
+        contadorPerigo.textContent = "Pausa demonstrativa: faltam " + restante + " segundos";
+
     } else if (estadoAtual === "PERIGO" && inicioPerigo !== null) {
-        const decorrido = Math.floor((agora - inicioPerigo) / 1000);
-        contadorPerigo.textContent = "Em perigo simulado há " + decorrido + " segundos";
+        const decorrido = Math.min(20, Math.floor((agora - inicioPerigo) / 1000));
+        contadorPerigo.textContent = "Perigo contínuo na simulação: " + decorrido + " de 20 segundos";
+
     } else if (estadoAtual === "INVALIDA") {
         contadorPerigo.textContent = "Leitura simulada inválida. Verifique os controles.";
+
     } else {
         contadorPerigo.textContent = "Aguardando condição de perigo";
     }
 }
 
 controleTemperatura.addEventListener("input", function() {
-    temperaturaSelecionada.textContent = controleTemperatura.value + "°C";
+    atualizarMonitoramento();
+    atualizarContador();
 });
 
 controleUmidade.addEventListener("input", function() {
-    umidadeSelecionada.textContent = controleUmidade.value + "%";
+    atualizarMonitoramento();
+    atualizarContador();
 });
 
 const horaInicio = document.getElementById("hora-inicio");
@@ -246,6 +277,7 @@ function analisarMeuDia() {
     }
 
     let horasPerigo = 0;
+
     for (let hora = inicio; hora < fim; hora++) {
         if (temperaturasDia[hora] > 39) {
             horasPerigo++;
@@ -268,8 +300,10 @@ function analisarMeuDia() {
 botaoAnalisar.addEventListener("click", analisarMeuDia);
 
 const botaoTema = document.getElementById("alternar-tema");
+
 botaoTema.addEventListener("click", function() {
     document.body.classList.toggle("tema-escuro");
+
     if (document.body.classList.contains("tema-escuro")) {
         botaoTema.textContent = "☀️";
     } else {
@@ -279,5 +313,6 @@ botaoTema.addEventListener("click", function() {
 
 atualizarMonitoramento();
 atualizarContador();
+
 setInterval(atualizarMonitoramento, INTERVALO_LEITURA);
 setInterval(atualizarContador, 1000);
