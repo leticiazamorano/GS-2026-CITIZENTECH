@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respira RJ | Tecnologia contra o calor extremo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="cabecalho">
+    <a href="#inicio" class="logo">Respira<span>RJ</span></a>
+    <nav class="navegacao" aria-label="Menu principal">
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#problema">O problema</a></li>
+            <li><a href="#solucao">Como funciona</a></li>
+            <li><a href="#monitoramento">Monitoramento</a></li>
+            <li><a href="#meu-dia">Meu Dia</a></li>
+            <li><a href="#pontos">Pontos de Respiração</a></li>
+        </ul>
+    </nav>
+    <button type="button" id="alternar-tema" aria-label="Alternar tema claro e escuro">🌙</button>
+</header>
+<main>
+    <section class="hero" id="inicio">
+        <div class="hero__conteudo">
+            <span class="hero__etiqueta">Tecnologia que protege vidas</span>
+            <h1>O calor aumenta. <span>O cuidado também.</span></h1>
+            <p>O Respira RJ utiliza tecnologia para ajudar trabalhadores expostos ao calor extremo, oferecendo monitoramento, alertas e soluções para melhorar o conforto térmico.</p>
+            <div class="hero__botoes">
+                <a href="#monitoramento" class="btn btn--principal">Acessar monitoramento</a>
+                <a href="#solucao" class="btn btn--secundario">Conheça a solução</a>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <img src="hero-respira-rj.png" alt="Trabalhador ambulante se hidratando sob um guarda-sol em um dia de calor intenso no Rio de Janeiro" class="hero__imagem">
+        </div>
+    </section>
+    <section class="problema" id="problema">
+        <div class="problema__introducao">
+            <span class="problema__etiqueta">O PROBLEMA</span>
+            <h2>Para quem trabalha nas ruas, <span>o calor não é apenas desconforto.</span></h2>
+            <p>No Rio de Janeiro, trabalhadores ambulantes enfrentam longas jornadas expostos ao sol e às altas temperaturas. Para muitos, interromper o trabalho pode significar perder parte da renda do dia.</p>
+        </div>
+        <div class="problema__cards">
+            <article class="problema__card">
+                <span class="problema__icone">☀️</span>
+                <h3>Exposição ao sol</h3>
+                <p>A exposição prolongada ao sol e ao calor pode provocar desgaste físico e aumentar os riscos à saúde.</p>
+            </article>
+            <article class="problema__card">
+                <span class="problema__icone">🌡️</span>
+                <h3>Riscos à saúde</h3>
+                <p>O calor intenso pode contribuir para desidratação, exaustão térmica e outros problemas de saúde.</p>
+            </article>
+            <article class="problema__card">
+                <span class="problema__icone">💼</span>
+                <h3>Trabalho e renda</h3>
+                <p>Muitos ambulantes precisam continuar trabalhando mesmo em condições de calor intenso para garantir sua renda.</p>
+            </article>
+        </div>
+        <div class="problema__dados">
+            <div class="problema__dados-introducao">
+                <span class="problema__etiqueta">O CALOR EXTREMO EM NÚMEROS</span>
+                <h3>O Rio de Janeiro já registrou sensações térmicas acima de 60°C.</h3>
+                <p>Em 17 de março de 2024, estações do Sistema Alerta Rio registraram valores extremos de sensação térmica em diferentes bairros da cidade.</p>
+            </div>
+            <div class="problema__numeros">
+                <article class="problema__numero-card">
+                    <span class="problema__numero-icone">🔥</span>
+                    <h4>62,3°C</h4>
+                    <h5>Guaratiba</h5>
+                    <p>Zona Oeste do Rio de Janeiro</p>
+                    <span class="problema__data">17 de março de 2024</span>
+                </article>
+                <article class="problema__numero-card">
+                    <span class="problema__numero-icone">🌡️</span>
+                    <h4>57,7°C</h4>
+                    <h5>Jardim Botânico</h5>
+                    <p>Zona Sul do Rio de Janeiro</p>
+                    <span class="problema__data">17 de março de 2024</span>
+                </article>
+                <article class="problema__numero-card">
+                    <span class="problema__numero-icone">☀️</span>
+                    <h4>52,4°C</h4>
+                    <h5>Santa Cruz</h5>
+                    <p>Zona Oeste do Rio de Janeiro</p>
+                    <span class="problema__data">17 de março de 2024</span>
+                </article>
+            </div>
+            <div class="problema__fonte">
+                <p>Fonte: Sistema Alerta Rio / Centro de Operações Rio.</p>
+                <p>Os valores representam sensação térmica registrada por estações meteorológicas, não temperatura do ar.</p>
+                <a href="https://cor.rio/rio-de-janeiro-bate-novo-recorde-de-sensacao-termica-neste-domingo-17-de-marco-confira-os-maiores-registros/" target="_blank" rel="noopener noreferrer">Consultar notícia oficial ↗</a>
+            </div>
+        </div>
+    </section>
+    <section class="solucao" id="solucao">
+        <div class="solucao__introducao">
+            <span class="solucao__etiqueta">COMO FUNCIONA</span>
+            <h2>Tecnologia que monitora. <span>Cuidado que transforma.</span></h2>
+            <p>O Respira RJ propõe combinar sensores, alertas visuais e medidas de ventilação para ajudar trabalhadores ambulantes a enfrentar o calor extremo.</p>
+        </div>
+        <div class="solucao__etapas">
+            <article class="solucao__etapa">
+                <div class="solucao__icone">🌡️</div>
+                <span class="solucao__numero">01</span>
+                <h3>Monitoramento do ambiente</h3>
+                <p>Na proposta, sensores acompanham a temperatura e a umidade dentro da barraca, identificando mudanças nas condições ambientais.</p>
+            </article>
+            <article class="solucao__etapa">
+                <div class="solucao__icone">🚨</div>
+                <span class="solucao__numero">02</span>
+                <h3>Alertas de calor</h3>
+                <p>O simulador identifica diferentes níveis de risco e apresenta alertas visuais para orientar o trabalhador.</p>
+            </article>
+            <article class="solucao__etapa">
+                <div class="solucao__icone">🌬️</div>
+                <span class="solucao__numero">03</span>
+                <h3>Modo Resfriamento</h3>
+                <p>Quando necessário, o sistema simula o acionamento da ventilação, mantendo o monitoramento ativo.</p>
+            </article>
+            <article class="solucao__etapa">
+                <div class="solucao__icone">💚</div>
+                <span class="solucao__numero">04</span>
+                <h3>Orientações de proteção</h3>
+                <p>O trabalhador recebe recomendações de hidratação, descanso e outras medidas para reduzir a exposição ao calor.</p>
+            </article>
+        </div>
+        <div class="solucao__acao">
+            <a href="#monitoramento" class="btn btn--principal">Testar monitoramento</a>
+        </div>
+    </section>
+    <section class="monitoramento" id="monitoramento">
+        <div class="monitoramento__introducao">
+            <span class="monitoramento__etiqueta">MONITORAMENTO INTELIGENTE</span>
+            <h2>Acompanhe o calor. <span>Proteja sua saúde.</span></h2>
+            <p>Conheça o painel do Respira RJ e simule diferentes condições de temperatura dentro de uma barraca de trabalho.</p>
+        </div>
+        <div class="dashboard">
+            <div class="dashboard__cabecalho">
+                <div>
+                    <h3>Painel de monitoramento</h3>
+                    <p>Barraca 01 | Dados simulados</p>
+                </div>
+                <span class="dashboard__status" id="status-sistema">● Simulador ativo</span>
+            </div>
+            <div class="dashboard__indicadores">
+                <article class="indicador">
+                    <span class="indicador__icone">🌡️</span>
+                    <p>Temperatura ambiente</p>
+                    <h3 id="temperatura-valor">34°C</h3>
+                    <span>Leitura simulada</span>
+                </article>
+                <article class="indicador">
+                    <span class="indicador__icone">💧</span>
+                    <p>Umidade relativa</p>
+                    <h3 id="umidade-valor">62%</h3>
+                    <span>Leitura simulada</span>
+                </article>
+                <article class="indicador">
+                    <span class="indicador__icone">⚠️</span>
+                    <p>Classificação do risco</p>
+                    <h3 id="risco-valor">Atenção</h3>
+                    <span id="risco-descricao">Classificação demonstrativa</span>
+                </article>
+                <article class="indicador">
+                    <span class="indicador__icone">☀️</span>
+                    <p>Sensação térmica</p>
+                    <h3 id="sensacao-valor">--°C</h3>
+                    <span>Média das últimas 3 leituras</span>
+                </article>
+            </div>
+            <div class="dashboard__simulador">
+                <h3>Simulador de temperatura</h3>
+                <p>Altere a temperatura para visualizar como o sistema reage às condições simuladas do ambiente.</p>
+                <div class="simulador__controle">
+                    <label for="controle-temperatura">Temperatura simulada: <strong id="temperatura-selecionada">34°C</strong></label>
+                    <input type="range" id="controle-temperatura" min="25" max="42" value="34">
+                </div>
+                <div class="simulador__controle">
+                    <label for="controle-umidade">Umidade simulada: <strong id="umidade-selecionada">62%</strong></label>
+                    <input type="range" id="controle-umidade" min="20" max="100" value="62">
+                </div>
+            </div>
+            <div class="dashboard__resfriamento">
+                <div class="resfriamento__informacoes">
+                    <span class="resfriamento__icone">🌬️</span>
+                    <div>
+                        <h3>Resfriamento Automático</h3>
+                        <p id="resfriamento-status">Ventilação simulada desativada</p>
+                        <p id="contador-perigo" aria-live="off">Aguardando condição de perigo</p>
+                    </div>
+                </div>
+                <button type="button" id="botao-resfriamento" class="btn btn--principal" aria-pressed="false" disabled>Simulação de ventilação desligada</button>
+            </div>
+            <div class="dashboard__alerta" role="status" aria-live="polite">
+                <h3 id="alerta-titulo">⚠️ Atenção ao calor</h3>
+                <p id="alerta-mensagem">Mantenha água disponível, reduza a exposição ao sol e acompanhe as condições do ambiente.</p>
+            </div>
+            <p class="dashboard__aviso">Este painel utiliza dados simulados para fins acadêmicos. As classificações demonstrativas não substituem avaliações profissionais de segurança térmica.</p>
+        </div>
+    </section>
+    <section class="meu-dia" id="meu-dia">
+        <div class="meu-dia__introducao">
+            <span class="meu-dia__etiqueta">PLANEJE SUA ROTINA</span>
+            <h2>Seu dia de trabalho merece mais cuidado.</h2>
+            <p>Escolha seu horário de trabalho e veja em quais momentos o calor pode representar um risco maior, de acordo com os dados simulados.</p>
+        </div>
+        <div class="meu-dia__painel">
+            <h3>Como será seu dia?</h3>
+            <div class="meu-dia__horarios">
+                <div class="meu-dia__campo">
+                    <label for="hora-inicio">Início do trabalho</label>
+                    <select id="hora-inicio">
+                        <option value="7">07:00</option>
+                        <option value="8">08:00</option>
+                        <option value="9">09:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                    </select>
+                </div>
+                <div class="meu-dia__campo">
+                    <label for="hora-fim">Fim do trabalho</label>
+                    <select id="hora-fim">
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18" selected>18:00</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="btn btn--principal" id="botao-analisar">Analisar meu dia</button>
+            <div class="meu-dia__resultado" id="resultado-dia" aria-live="polite">
+                <h3>Seu resultado aparecerá aqui</h3>
+                <p>Selecione seus horários e clique em analisar.</p>
+            </div>
+            <p class="meu-dia__aviso">Esta análise utiliza dados simulados para fins acadêmicos. Não representa uma previsão meteorológica em tempo real.</p>
+        </div>
+    </section>
+    <section class="pontos" id="pontos">
+        <div class="pontos__introducao">
+            <span class="pontos__etiqueta">OPÇÕES DE PROTEÇÃO</span>
+            <h2>Conheça os pontos de respiração.</h2>
+            <p>Nos dias de calor intenso, uma pausa pode fazer a diferença. Veja exemplos de espaços que podem oferecer mais conforto e proteção durante o trabalho.</p>
+        </div>
+        <div class="pontos__lista">
+            <article class="pontos__card">
+                <div class="pontos__icone">🌳</div>
+                <h3>Ponto de Sombra</h3>
+                <p>Áreas arborizadas ou com cobertura que ajudam a reduzir a exposição direta ao sol.</p>
+                <span class="pontos__categoria">Proteção solar</span>
+                <a href="sombra.html" class="pontos__link">Explorar pontos de sombra →</a>
+            </article>
+            <article class="pontos__card">
+                <div class="pontos__icone">💧</div>
+                <h3>Ponto de Hidratação</h3>
+                <p>Espaços com acesso à água potável para que o trabalhador possa se hidratar durante o dia.</p>
+                <span class="pontos__categoria">Hidratação</span>
+                <a href="hidratacao.html" class="pontos__link">Explorar pontos de hidratação →</a>
+            </article>
+            <article class="pontos__card">
+                <div class="pontos__icone">🌬️</div>
+                <h3>Ponto de Descanso</h3>
+                <p>Locais protegidos do sol, com circulação de ar e espaço para uma pausa segura.</p>
+                <span class="pontos__categoria">Recuperação</span>
+                <a href="descanso.html" class="pontos__link">Explorar pontos de descanso →</a>
+            </article>
+        </div>
+        <p class="pontos__aviso">Os pontos apresentados são exemplos ilustrativos. A localização e a disponibilidade de espaços reais ainda precisam ser verificadas.</p>
+    </section>
+</main>
+<footer class="rodape">
+    <div class="rodape__conteudo">
+        <div class="rodape__sobre">
+            <h2>Respira<span>RJ</span></h2>
+            <p>Tecnologia e cuidado para proteger trabalhadores ambulantes dos riscos do calor extremo no Rio de Janeiro.</p>
+        </div>
+        <div class="rodape__navegacao">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#monitoramento">Monitoramento</a></li>
+                <li><a href="#meu-dia">Meu Dia</a></li>
+                <li><a href="#pontos">Pontos de Respiração</a></li>
+            </ul>
+        </div>
+        <div class="rodape__equipe">
+            <h3>Equipe</h3>
+            <p>Julio Cezar Almeida Santos</p>
+            <p>Letícia Zamorano Viegas de Freitas</p>
+            <p>Alanny Vieira da Silva</p>
+        </div>
+    </div>
+    <div class="rodape__inferior">
+        <p>© 2026 Respira RJ | Global Solution 2026.2 — FIAP</p>
+        <p>ODS 3 • ODS 8 • ODS 11 • ODS 13</p>
+    </div>
+</footer>
+</body>
+</html>
