@@ -3,7 +3,7 @@
 
 ### Como a IA ajudou no desenvolvimento do Respira RJ
 
-Durante o desenvolvimento do site **Respira RJ**, utilizamos a inteligência artificial como ferramenta de apoio na organização e no aprimoramento do HTML, CSS e JavaScript.
+Durante o desenvolvimento do site **Respiro RJ**, utilizamos a inteligência artificial como ferramenta de apoio na organização e no aprimoramento do HTML, CSS e JavaScript.
 
 | Data | Integrante | IA utilizada | O que pedimos | O que aproveitamos ou mudamos |
 |------|------------|--------------|---------------|--------------------------------|
