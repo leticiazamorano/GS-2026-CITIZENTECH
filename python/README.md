@@ -40,7 +40,7 @@ O limite de 1 hora para a pausa é uma regra do projeto, não uma medida médica
 
 ## Resumo calculado
 
-A opção 2 mostra a média do dia (35,5 °C), o maior valor (43 °C às 13h), as horas em ATENÇÃO (4), as horas em PERIGO (4 de 12, 33%), a maior sequência em perigo (das 12h às 15h) e quantos alertas de pausa foram dados (1)
+A opção 2 mostra a média do dia (35,5 °C), o maior valor (43 °C às 13h), as horas em ATENÇÃO (4), as horas em PERIGO (4 de 12, 33%), as leituras em alerta, somando atenção e perigo (8 de 12, 67%), a maior sequência em perigo (das 12h às 15h) e quantos alertas de pausa foram dados (1).
 
 ## Integração com as outras partes
 
@@ -56,6 +56,8 @@ A opção 2 mostra a média do dia (35,5 °C), o maior valor (43 °C às 13h), a
 ## Execução
 
 ![Execução do programa](image.png)
+
+![Resumo do dia (opção 2)](resumo.png)
 
 ## Antes de enviar
 

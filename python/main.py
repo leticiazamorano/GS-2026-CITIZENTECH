@@ -105,7 +105,7 @@ while opcao != "0":
             else:
                 sequencia = 0
 
-            if sequencia == limite_pausa:
+            if sequencia == limite_pausa + 1:
                 print(f"  {hora:02d}h: {valor} {unidade} -> {faixa} -> HORA DA PAUSA")
             else:
                print(f"  {hora:02d}h: {valor} {unidade} -> {faixa}")
@@ -146,7 +146,7 @@ while opcao != "0":
                 if sequencia == 0:
                     inicio_sequencia = hora
                 sequencia = sequencia + 1
-                if sequencia == limite_pausa:
+                if sequencia == limite_pausa + 1:
                     qtd_pausas = qtd_pausas + 1
                 if sequencia > maior_sequencia:
                     maior_sequencia = sequencia
@@ -166,6 +166,9 @@ while opcao != "0":
             print(f"Maior valor: {maior} {unidade} às {hora_maior}h")
             print(f"Horas em ATENÇÃO: {qtd_atencao}")
             print(f"Horas em PERIGO: {qtd_perigo} de {qtd_validas} ({percentual_perigo:.0f}%)")
+            qtd_alerta = qtd_atencao + qtd_perigo
+            percentual_alerta = qtd_alerta / qtd_validas * 100
+            print(f"Leituras em alerta (atenção + perigo): {qtd_alerta} de {qtd_validas} ({percentual_alerta:.0f}%)")
             if maior_sequencia > 0:
                 fim_maior_sequencia = inicio_maior_sequencia + maior_sequencia - 1
                 print(f"Maior sequência em PERIGO: {maior_sequencia} hora(s) seguidas, "
