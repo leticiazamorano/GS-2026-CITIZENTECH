@@ -36,8 +36,6 @@ leituras = [27, 29, 31, 34, 37, 41, 43, 42, 40, 37, 34, 31]
 
 # ------------------------------------------------------------
 # PARTE 2 - FAIXAS DE DECISÃO
-# Limites da tabela de índice de calor, em °C.
-# São os mesmos utilizados no sistema de EDGE e no site.
 # ------------------------------------------------------------
 
 limite_atencao = 32.0   # 32 °C a 39 °C : ATENÇÃO
