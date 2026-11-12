@@ -3,7 +3,7 @@
 Parte de **Computational Thinking with Python** da CitizenTech *Respiro RJ*.
 
 ## O que o programa faz
- programa recebe as 12 leituras de sensação térmica de um dia de trabalho na barraca (das 7h às 18h) e classifica cada uma com `if/elif/else` nas mesmas faixas da Sentinela do Calor. Ele calcula o resumo do dia, encontra a maior sequência de horas seguidas em perigo e, quando ela chega a 1 hora, pede uma pausa ao ambulante, com os mesmos avisos do site.
+ O programa recebe as 12 leituras de sensação térmica de um dia de trabalho na barraca (das 7h às 18h) e classifica cada uma com `if/elif/else` nas mesmas faixas da Sentinela do Calor. Ele calcula o resumo do dia, encontra a maior sequência de horas seguidas em perigo e, quando ela chega a 1 hora, pede uma pausa ao ambulante, com os mesmos avisos do site.
 
 
 ## Como rodar
@@ -31,7 +31,7 @@ Os mesmos limites usados no circuito de Edge e os mesmos textos da página. Os l
 | Faixa | Condição | Aviso para o cidadão | Sentinela |
 |---|---|---|---|
 | NORMAL | valor < 32 | Calor sob controle. Mantenha a água por perto. | LED verde |
-| ATENÇÃO | 32 ≤ valor ≤ 39 | Calor forte. Beba água com frequência e ligue o ventilador. | LED amarelo |
+| ATENÇÃO | 32 ≤ valor ≤ 39 | Calor forte. Beba água com frequência. | LED amarelo |
 | PERIGO | valor > 39 | Calor perigoso! Faça uma pausa na sombra e beba água. Se sentir tontura, peça ajuda. | LED vermelho |
 | HORA DA PAUSA | 1 hora seguida em PERIGO | Você está há 1 hora em calor perigoso. Pare agora e procure um Ponto de Respiro. | LED vermelho piscando + bipe curto |
 | LEITURA INVÁLIDA | valor < 0 ou valor > 60 | Sensor sem leitura. Confira o aparelho. | LED amarelo piscando |
@@ -40,7 +40,7 @@ O limite de 1 hora para a pausa é uma regra do projeto, não uma medida médica
 
 ## Resumo calculado
 
-[O que a opção 2 mostra: média, maior valor, % de leituras em alerta e qualquer conta extra que a equipe criou.]
+A opção 2 mostra a média do dia (35,5 °C), o maior valor (43 °C às 13h), as horas em ATENÇÃO (4), as horas em PERIGO (4 de 12, 33%), a maior sequência em perigo (das 12h às 15h) e quantos alertas de pausa foram dados (1)
 
 ## Integração com as outras partes
 

@@ -13,7 +13,7 @@
 #  Partes do programa:
 #    PARTE 1 - Dados            (12 leituras, das 7h às 18h)
 #    PARTE 2 - Faixas           (os mesmos limites do circuito de Edge)
-#    PARTE 3 - Classificação    (cada leitura recebe a sua prórpia faixa)
+#    PARTE 3 - Classificação    (cada leitura recebe a sua própria faixa)
 #    PARTE 4 - Menu             (loop que só termina no Sair)
 #    PARTE 5 - Opções           (classificar, resumir, consultar, testar)
 # ============================================================
@@ -47,7 +47,7 @@ limite_pausa = 1        # horas seguidas em PERIGO até solicitar a pausa
 # AVISOS 
 
 aviso_normal = "Calor sob controle. Mantenha a água por perto."
-aviso_atencao = "Calor forte. Beba água com frequência, o ventilador será ligado."
+aviso_atencao = "Calor forte. Beba água com frequência."
 aviso_perigo = "Calor perigoso! Faça uma pausa na sombra e beba água. Se sentir tontura, peça ajuda."
 aviso_pausa = "Você está há 1 hora em calor perigoso. Pare agora e procure um Ponto de Respiro."
 aviso_invalida = "Sensor sem leitura. Confira o aparelho."
@@ -103,7 +103,7 @@ while opcao != "0":
             if faixa == "PERIGO":
                 sequencia= sequencia +1
             else:
-                seuencia = 0
+                sequencia = 0
 
             if sequencia == limite_pausa:
                 print(f"  {hora:02d}h: {valor} {unidade} -> {faixa} -> HORA DA PAUSA")
