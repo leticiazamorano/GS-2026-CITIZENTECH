@@ -1,6 +1,6 @@
 """
 RESPIRO RJ - Sentinela do Calor
-Global Solution FIAP 2026.2 (CitizenTech) - Calculo / Modelagem Matematica
+Global Solution FIAP 2026.2 (CitizenTech) - Differentieated Problem Solving- Modelagem Matemática
 
 Problema: exposicao de vendedores ambulantes da Vila da Penha (Zona Norte do
 Rio de Janeiro) ao calor extremo durante o horario de trabalho (7h as 18h).
