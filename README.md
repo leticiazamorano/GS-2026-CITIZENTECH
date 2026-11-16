@@ -31,7 +31,7 @@ Global Solution 2026.2 · CitizenTech · Engenharia de Software, 1º ano · FIAP
 | Sentinela do Calor (circuito com ESP32) | Edge Computing & Computer Systems | [Simulação no Wokwi](https://wokwi.com/projects/479913873012407297) · [Vídeo explicando](https://youtu.be/PWTwxTkHQDc) |
 | Escopo, requisitos, backlog e priorização | Software & Total Experience Design | Slides entregues no Teams e no Portal |
 | Modelo matemático do calor ao longo do dia | Differentiated Problem Solving | Relatório e código entregues no Portal |
-| Pitch de 3 minutos | Storytelling & Inspiração Empreendedora | [COLAR O LINK DO VÍDEO DO PITCH] |
+| Pitch de 3 minutos | Storytelling & Inspiração Empreendedora | https://youtu.be/ymJXBg5XgVQ |
 
 Todas as partes usam as mesmas regras: sensação térmica abaixo de 32 °C é NORMAL, de 32 a 39 °C é ATENÇÃO, acima de 39 °C é PERIGO, e 1 hora seguida em perigo gera uma pausa de 5 minutos.
 
